@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on linux)" generated="20230808 19:24:43.061" rpa="false" schemaversion="4">
+<suite id="s1" name="TC 007 Get Validate status code keyword" source="/home/afzhal-ahmed-s/PycharmProjects/RobotAPI automation/TC_007_Get_Validate_status_code_keyword.robot">
+<test id="s1-t1" name="TC_001_Get_Request" line="11">
+<kw name="Fetch_and_Validate_Get_Status_code" library="UserKeyword">
+<arg>50</arg>
+<arg>200</arg>
+<kw name="Create Session" library="RequestsLibrary">
+<arg>SName</arg>
+<arg>${Base_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230808 19:24:43.210" level="INFO">Creating Session using : alias=SName, url=http://www.testingworldapi.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230808 19:24:43.210" endtime="20230808 19:24:43.210"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${response}</var>
+<arg>SName</arg>
+<arg>/api/studentDetails/${studentId}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20230808 19:24:45.560" level="INFO">GET Request : url=http://www.testingworldapi.com/api/studentDetails/50 
+ path_url=/api/studentDetails/50 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20230808 19:24:45.560" level="INFO">GET Response : url=http://www.testingworldapi.com/api/studentDetails/50 
+ status=200, reason=OK 
+ headers={'accept-ch': 'Sec-CH-UA, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile', 'cache-control': 'max-age=0, private, must-revalidate', 'connection': 'close', 'content-length': '505', 'content-type': 'text/html; charset=utf-8', 'date': 'Tue, 08 Aug 2023 13:56:25 GMT', 'server': 'nginx', 'set-cookie': 'sid=5de214a6-35f3-11ee-a564-dd8095cd2a27; path=/; domain=.testingworldapi.com; expires=Sun, 26 Aug 2091 17:10:33 GMT; max-age=2147483647; HttpOnly'} 
+ body=&lt;html&gt;&lt;head&gt;&lt;title&gt;Loading...&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;script type='text/javascript'&gt;window.location.replace('http://www.testingworldapi.com/api/studentDetails/50?ch=1&amp;js=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJKb2tlbiIsImV4cCI6MTY5MTUxMDE4NiwiaWF0IjoxNjkxNTAyOTg2LCJpc3MiOiJKb2tlbiIsImpzIjoxLCJqdGkiOiIydHNtcTA4ZWF1ZDBmdWp1MzAwNG43bTMiLCJuYmYiOjE2OTE1MDI5ODYsInRzIjoxNjkxNTAyOTg2MzU3MTEwfQ.EAQVdBqk75UWWlgD2biFF2UidZEqmQapMZaVqd_b51s&amp;sid=5de214a6-35f3-11ee-a564-dd8095cd2a27');&lt;/script&gt;&lt;/body&gt;&lt;/html&gt; 
+ </msg>
+<msg timestamp="20230808 19:24:45.561" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230808 19:24:43.210" endtime="20230808 19:24:45.561"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${statusCode}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20230808 19:24:45.564" level="INFO">${statusCode} = 200</msg>
+<status status="PASS" starttime="20230808 19:24:45.561" endtime="20230808 19:24:45.564"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${expected_status_code}</arg>
+<arg>${statusCode}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230808 19:24:45.564" endtime="20230808 19:24:45.565"/>
+</kw>
+<status status="PASS" starttime="20230808 19:24:43.209" endtime="20230808 19:24:45.565"/>
+</kw>
+<kw name="Fetch_and_return_Get_response" library="UserKeyword">
+<var>${response}</var>
+<arg>50</arg>
+<kw name="Create Session" library="RequestsLibrary">
+<arg>SName</arg>
+<arg>${Base_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230808 19:24:45.567" level="INFO">Creating Session using : alias=SName, url=http://www.testingworldapi.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230808 19:24:45.567" endtime="20230808 19:24:45.568"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${response}</var>
+<arg>SName</arg>
+<arg>/api/studentDetails/${studentId}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20230808 19:24:46.051" level="INFO">GET Request : url=http://www.testingworldapi.com/api/studentDetails/50 
+ path_url=/api/studentDetails/50 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20230808 19:24:46.051" level="INFO">GET Response : url=http://www.testingworldapi.com/api/studentDetails/50 
+ status=200, reason=OK 
+ headers={'accept-ch': 'Sec-CH-UA, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile', 'cache-control': 'max-age=0, private, must-revalidate', 'connection': 'close', 'content-length': '505', 'content-type': 'text/html; charset=utf-8', 'date': 'Tue, 08 Aug 2023 13:56:26 GMT', 'server': 'nginx', 'set-cookie': 'sid=5e2d7cb6-35f3-11ee-ae1e-dd8070e7fece; path=/; domain=.testingworldapi.com; expires=Sun, 26 Aug 2091 17:10:33 GMT; max-age=2147483647; HttpOnly'} 
+ body=&lt;html&gt;&lt;head&gt;&lt;title&gt;Loading...&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;script type='text/javascript'&gt;window.location.replace('http://www.testingworldapi.com/api/studentDetails/50?ch=1&amp;js=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJKb2tlbiIsImV4cCI6MTY5MTUxMDE4NiwiaWF0IjoxNjkxNTAyOTg2LCJpc3MiOiJKb2tlbiIsImpzIjoxLCJqdGkiOiIydHNtcTA5YnEzaWQxczlzZWcwNHR2MDEiLCJuYmYiOjE2OTE1MDI5ODYsInRzIjoxNjkxNTAyOTg2ODUxNjU0fQ.gLzaMUSJpT0kXBMc5mFs96XZv_isBpndnp85ZdIQvos&amp;sid=5e2d7cb6-35f3-11ee-ae1e-dd8070e7fece');&lt;/script&gt;&lt;/body&gt;&lt;/html&gt; 
+ </msg>
+<msg timestamp="20230808 19:24:46.051" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230808 19:24:45.568" endtime="20230808 19:24:46.051"/>
+</kw>
+<msg timestamp="20230808 19:24:46.052" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230808 19:24:45.566" endtime="20230808 19:24:46.052"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230808 19:24:46.053" endtime="20230808 19:24:46.055"/>
+</kw>
+<status status="PASS" starttime="20230808 19:24:43.209" endtime="20230808 19:24:46.055"/>
+</test>
+<status status="PASS" starttime="20230808 19:24:43.062" endtime="20230808 19:24:46.057"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 007 Get Validate status code keyword">TC 007 Get Validate status code keyword</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

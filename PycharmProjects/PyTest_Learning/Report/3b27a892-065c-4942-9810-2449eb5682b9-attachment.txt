@@ -1,0 +1,5 @@
+{'name': 'Umar', 'job': 'Khalifa'}
+{'Date': 'Mon, 07 Aug 2023 06:37:47 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '81', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"51-ILT/1LY9J5wNoClaDs2KqAv5N9U"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=YH4i4B7%2BrgZVEq7yRXCQWsFxqDMjTIQXNHu6GQvhO1lGYPA%2FVcufIGaSlOui6AtuT%2BQqPktoD1vJZrMJETpzQk9g65NQ1MFbAYnzfZldByaR8HiR7vgkhFCjBSGtuPTGQjFOp5OvhA%3D%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '7f2d83537e608994-SIN'}
+b'{"name":"Umar","job":"Khalifa","id":"752","createdAt":"2023-08-07T06:37:47.706Z"}'
+81
+752
