@@ -96,4 +96,3 @@ class Library:
         while not softAssertQueue1.empty():
             print("From soft assertion:", softAssertQueue1.get())
 
-
