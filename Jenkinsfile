@@ -37,10 +37,10 @@ pipeline {
             }
         }
 
-        stage('Run Pytest') {
+        stage('Run Python code') {
             steps {
                 // Run your pytest code
-                sh 'pytest <path_to_your_test_files>'
+                sh '/home/afzhal-ahmed-s/pytest-jenkins-mysql-logging/pycharm_projects/task/args_kwargs_2.py'
             }
         }
     }
