@@ -1,4 +1,5 @@
 [
+  "exp2_with_test_case.py::test_eggs",
   "test_task2.py::test_create_cart",
   "test_task2.py::test_create_new_order",
   "test_task2_clone.py::test_add_items_to_cart",
