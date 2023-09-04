@@ -8,7 +8,7 @@ pipeline {
     }
     stage('hello') {
       steps {
-        sh 'python3 hello.py'
+        sh 'python3 pycharm_projects/task/args_kwargs.py'
       }
     }
   }
