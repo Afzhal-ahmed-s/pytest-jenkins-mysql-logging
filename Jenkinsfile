@@ -40,6 +40,7 @@ pipeline {
         stage('Run Python code') {
             steps {
                 // Run your pytest code
+                chmod +r pycharm_projects/task/args_kwargs_2.py
                 sh 'pycharm_projects/task/args_kwargs_2.py'
             }
         }
