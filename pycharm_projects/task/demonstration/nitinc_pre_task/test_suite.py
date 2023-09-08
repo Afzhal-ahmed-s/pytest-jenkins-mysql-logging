@@ -2,21 +2,17 @@ import json
 import pytest
 import requests
 import logging
-
 import sys
+from pycharm_projects.utility import basic_utility, sql_utility, kafka_utility
 
 sys.path.append('/home/afzhal-ahmed-s/pytest_jenkins_mysql_logging/pycharm_projects')
 
-from pycharm_projects.utility import basic_utility, sql_utility, kafka_utility
-
 obj = basic_utility.Basic_utility()
 sql_gateway = sql_utility.Sql_utility("localhost", "root", "new_password", "db1")
-
-# log_file_path = 'my_log_file.log'
-logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
-
 # kafka utility
 kafka_utility = kafka_utility.Kafka_utility()
+# log_file_path = 'my_log_file.log'
+logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
 
 @pytest.mark.automate
