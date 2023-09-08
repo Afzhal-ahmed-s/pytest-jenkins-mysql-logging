@@ -1,3 +1,5 @@
+# print("Jenkins runs simple files.")
+
 my_list = []
 
 for i in range(0, 10):
@@ -20,7 +22,10 @@ def kwargs_play(num1, num2, **kw):
 
 
 args_play(5, 1000, *my_list)
-# my_dictionary = {
-#     "name": "Afzhal"
-# }
 kwargs_play(1, 2, **{"name": "Afzhal", "age": 1000, "state": "Tamil Nadu"})
+
+
+# without default params, 3 params, mn optional, 1 line code, python thing
+# also handle in args and kwargs
+# python environment variable
+
