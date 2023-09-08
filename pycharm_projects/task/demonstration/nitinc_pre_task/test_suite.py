@@ -7,13 +7,16 @@ import sys
 
 sys.path.append('/home/afzhal-ahmed-s/pytest_jenkins_mysql_logging/pycharm_projects')
 
-from pycharm_projects.utility import basic_utility, sql_utility
+from pycharm_projects.utility import basic_utility, sql_utility, kafka_utility
 
 obj = basic_utility.Basic_utility()
 sql_gateway = sql_utility.Sql_utility("localhost", "root", "new_password", "db1")
 
 # log_file_path = 'my_log_file.log'
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
+
+# kafka utility
+kafka_utility = kafka_utility.Kafka_utility()
 
 
 @pytest.mark.automate
@@ -33,6 +36,12 @@ def test_automate_add_items_to_a_single_cart(product_id):
         logging.warning(f"Error occurred in add_items_to_cart with productId: {product_id}")
 
         assert value, f"Error occurred in add_items_to_cart with productId: {product_id} {value}"
+
+    else:
+        logging.info(f"Product with productId- {product_id} added to cart with cartId- {obj.get_cart_id()}"
+                     f" in test_automate_add_items_to_a_single_cart")
+        assert value, (f"Product with productId- {product_id} added to cart with cartId- {obj.get_cart_id()} "
+                       f"in test_automate_add_items_to_a_single_cart")
 
 
 @pytest.mark.automate
@@ -58,6 +67,11 @@ def test_check_api_status():
     expected_status_code = 200
     response = requests.get(obj.check_url_status_api())
 
+    # kafka
+    message = str(response.status_code)
+    kafka_utility.produce_message("test_check_api_status: ", message)
+    logging.info("test_check_api_status message inserted into kafka topic 'noduco-task' via producer.")
+
     assert response.status_code == expected_status_code
 
 
@@ -68,6 +82,11 @@ def test_get_product_by_id():
     response = requests.get(obj.get_product_by_id_api(product_id))
     json_response = json.loads(response.text)
     manufacturer = json_response['manufacturer']
+
+    # kafka
+    message = response.text
+    kafka_utility.produce_message("test_get_product_by_id: ", message)
+    logging.info("test_get_product_by_id inserted into kafka topic 'noduco-task' via producer.")
 
     assert response.status_code == 200
     assert manufacturer == expected_manufacturer
@@ -87,6 +106,11 @@ def test_create_cart():
     # DB
     sql_gateway.add_table_one_info(cartId)
 
+    # kafka
+    message = response.text
+    kafka_utility.produce_message("test_create_cart: ", message)
+    logging.info("test_create_cart inserted into kafka topic 'noduco-task' via producer.")
+
     assert created == expected_created_response
 
 
@@ -102,6 +126,11 @@ def test_add_items_to_cart():
     # DB
     sql_gateway.add_table_two_info(str(productId), obj.get_cart_id())
     logging.info(f"CartId: {obj.get_cart_id()} with productId: {productId} persisted to tableTwo.")
+
+    # kafka
+    message = response.text
+    kafka_utility.produce_message("test_add_items_to_cart: ", message)
+    logging.info("test_add_items_to_cart inserted into kafka topic 'noduco-task' via producer.")
 
     assert response.status_code == expected_status_code_response
 
@@ -121,6 +150,12 @@ def test_create_new_order():
     # DB
     sql_gateway.add_table_three_info(orderId, cartId, customer_name)
     logging.info(f"OrderId: {orderId} with cartId: {cartId} with customer name: {customer_name}")
+
+    # kafka
+    message = response.text
+    kafka_utility.produce_message("test_create_new_order: ", message)
+    logging.info("test_create_new_order inserted into kafka topic 'noduco-task' via producer.")
+
     assert response.status_code == 201
 
     logging.info(f"New Order created: {response.text}")
@@ -169,5 +204,6 @@ def add_items_to_cart(product_id):
 
 
 # soft assertion explanation
-def test_give_me_all_messages_in_queues():
+def test_give_me_all_messages_in_queues_and_kafka_consumer():
     obj.get_all_message_from_queues()
+    kafka_utility.consume_message()
