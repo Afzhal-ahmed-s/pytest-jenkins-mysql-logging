@@ -1,210 +1,210 @@
 INFO     root:basic_utility.py:17 Library object created.
-INFO     root:test_suite.py:73 test_check_api_status message inserted into kafka topic 'noduco-task' via producer.
-INFO     root:test_suite.py:89 test_get_product_by_id inserted into kafka topic 'noduco-task' via producer.
-INFO     root:test_suite.py:103 Cart created with cartId: Nk2SpOxtSvUG6uUe-HUM2
-INFO     root:sql_utility.py:26 Nk2SpOxtSvUG6uUe-HUM2 inserted into TableOne!
-INFO     root:test_suite.py:112 test_create_cart inserted into kafka topic 'noduco-task' via producer.
-INFO     root:sql_utility.py:33 Nk2SpOxtSvUG6uUe-HUM2 with productId: 1225 inserted into TableTwo!
-INFO     root:test_suite.py:128 CartId: Nk2SpOxtSvUG6uUe-HUM2 with productId: 1225 persisted to tableTwo.
-INFO     root:test_suite.py:133 test_add_items_to_cart inserted into kafka topic 'noduco-task' via producer.
-INFO     root:test_suite.py:28 automated addition for cartId: Nk2SpOxtSvUG6uUe-HUM2
-INFO     root:basic_utility.py:76 automated addition for cartId: Nk2SpOxtSvUG6uUe-HUM2
-INFO     root:sql_utility.py:33 Nk2SpOxtSvUG6uUe-HUM2 with productId: 1225 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: Nk2SpOxtSvUG6uUe-HUM2 with productId: 1225 persisted to tableTwo.
+INFO     root:test_suite.py:78 test_check_api_status message inserted into kafka topic 'noduco-task' via producer.
+INFO     root:test_suite.py:94 test_get_product_by_id inserted into kafka topic 'noduco-task' via producer.
+INFO     root:test_suite.py:108 Cart created with cartId: U1Y2AHh7DjbrX9JuPq9aA
+INFO     root:sql_utility.py:25 U1Y2AHh7DjbrX9JuPq9aA inserted into TableOne!
+INFO     root:test_suite.py:117 test_create_cart inserted into kafka topic 'noduco-task' via producer.
+INFO     root:sql_utility.py:32 U1Y2AHh7DjbrX9JuPq9aA with productId: 1225 inserted into TableTwo!
+INFO     root:test_suite.py:133 CartId: U1Y2AHh7DjbrX9JuPq9aA with productId: 1225 persisted to tableTwo.
+INFO     root:test_suite.py:138 test_add_items_to_cart inserted into kafka topic 'noduco-task' via producer.
+INFO     root:test_suite.py:33 automated addition for cartId: U1Y2AHh7DjbrX9JuPq9aA
+INFO     root:basic_utility.py:76 automated addition for cartId: U1Y2AHh7DjbrX9JuPq9aA
+INFO     root:sql_utility.py:32 U1Y2AHh7DjbrX9JuPq9aA with productId: 1225 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: U1Y2AHh7DjbrX9JuPq9aA with productId: 1225 persisted to tableTwo.
 WARNING  root:basic_utility.py:80 Error occurred in add_items_to_cart with productId: 1225
-WARNING  root:test_suite.py:36 Error occurred in add_items_to_cart with productId: 1225
-INFO     root:test_suite.py:28 automated addition for cartId: Nk2SpOxtSvUG6uUe-HUM2
-INFO     root:basic_utility.py:76 automated addition for cartId: Nk2SpOxtSvUG6uUe-HUM2
-INFO     root:sql_utility.py:33 Nk2SpOxtSvUG6uUe-HUM2 with productId: 3674 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: Nk2SpOxtSvUG6uUe-HUM2 with productId: 3674 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 3674 added to cart with cartId- Nk2SpOxtSvUG6uUe-HUM2 in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: Nk2SpOxtSvUG6uUe-HUM2
-INFO     root:basic_utility.py:76 automated addition for cartId: Nk2SpOxtSvUG6uUe-HUM2
-INFO     root:sql_utility.py:33 Nk2SpOxtSvUG6uUe-HUM2 with productId: 2585 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: Nk2SpOxtSvUG6uUe-HUM2 with productId: 2585 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 2585 added to cart with cartId- Nk2SpOxtSvUG6uUe-HUM2 in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: Nk2SpOxtSvUG6uUe-HUM2
-INFO     root:basic_utility.py:76 automated addition for cartId: Nk2SpOxtSvUG6uUe-HUM2
-INFO     root:sql_utility.py:33 Nk2SpOxtSvUG6uUe-HUM2 with productId: 8739 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: Nk2SpOxtSvUG6uUe-HUM2 with productId: 8739 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 8739 added to cart with cartId- Nk2SpOxtSvUG6uUe-HUM2 in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: Nk2SpOxtSvUG6uUe-HUM2
-INFO     root:basic_utility.py:76 automated addition for cartId: Nk2SpOxtSvUG6uUe-HUM2
-INFO     root:sql_utility.py:33 Nk2SpOxtSvUG6uUe-HUM2 with productId: 4643 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: Nk2SpOxtSvUG6uUe-HUM2 with productId: 4643 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 4643 added to cart with cartId- Nk2SpOxtSvUG6uUe-HUM2 in test_automate_add_items_to_a_single_cart
-INFO     root:sql_utility.py:40 Nk2SpOxtSvUG6uUe-HUM2 with orderId: nPbi2Tzp55L_YIIL79Npf with customer name: Denise Nguyen inserted into TableThree!
-INFO     root:test_suite.py:152 OrderId: nPbi2Tzp55L_YIIL79Npf with cartId: Nk2SpOxtSvUG6uUe-HUM2 with customer name: Denise Nguyen
-INFO     root:test_suite.py:157 test_create_new_order inserted into kafka topic 'noduco-task' via producer.
-INFO     root:test_suite.py:161 New Order created: {"created":true,"orderId":"nPbi2Tzp55L_YIIL79Npf"}
-INFO     root:test_suite.py:103 Cart created with cartId: 7p-KQHDWpKsoX89x57nJK
-INFO     root:sql_utility.py:26 7p-KQHDWpKsoX89x57nJK inserted into TableOne!
-INFO     root:test_suite.py:112 test_create_cart inserted into kafka topic 'noduco-task' via producer.
-INFO     root:test_suite.py:28 automated addition for cartId: 7p-KQHDWpKsoX89x57nJK
-INFO     root:basic_utility.py:76 automated addition for cartId: 7p-KQHDWpKsoX89x57nJK
-INFO     root:sql_utility.py:33 7p-KQHDWpKsoX89x57nJK with productId: 1225 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: 7p-KQHDWpKsoX89x57nJK with productId: 1225 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 1225 added to cart with cartId- 7p-KQHDWpKsoX89x57nJK in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: 7p-KQHDWpKsoX89x57nJK
-INFO     root:basic_utility.py:76 automated addition for cartId: 7p-KQHDWpKsoX89x57nJK
-INFO     root:sql_utility.py:33 7p-KQHDWpKsoX89x57nJK with productId: 3674 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: 7p-KQHDWpKsoX89x57nJK with productId: 3674 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 3674 added to cart with cartId- 7p-KQHDWpKsoX89x57nJK in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: 7p-KQHDWpKsoX89x57nJK
-INFO     root:basic_utility.py:76 automated addition for cartId: 7p-KQHDWpKsoX89x57nJK
-INFO     root:sql_utility.py:33 7p-KQHDWpKsoX89x57nJK with productId: 2585 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: 7p-KQHDWpKsoX89x57nJK with productId: 2585 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 2585 added to cart with cartId- 7p-KQHDWpKsoX89x57nJK in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: 7p-KQHDWpKsoX89x57nJK
-INFO     root:basic_utility.py:76 automated addition for cartId: 7p-KQHDWpKsoX89x57nJK
-INFO     root:sql_utility.py:33 7p-KQHDWpKsoX89x57nJK with productId: 8739 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: 7p-KQHDWpKsoX89x57nJK with productId: 8739 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 8739 added to cart with cartId- 7p-KQHDWpKsoX89x57nJK in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: 7p-KQHDWpKsoX89x57nJK
-INFO     root:basic_utility.py:76 automated addition for cartId: 7p-KQHDWpKsoX89x57nJK
-INFO     root:sql_utility.py:33 7p-KQHDWpKsoX89x57nJK with productId: 4643 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: 7p-KQHDWpKsoX89x57nJK with productId: 4643 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 4643 added to cart with cartId- 7p-KQHDWpKsoX89x57nJK in test_automate_add_items_to_a_single_cart
-INFO     root:sql_utility.py:40 7p-KQHDWpKsoX89x57nJK with orderId: RZ_N4eCM-l5bfxUg9YC4Z with customer name: Kelly Martinez inserted into TableThree!
-INFO     root:test_suite.py:152 OrderId: RZ_N4eCM-l5bfxUg9YC4Z with cartId: 7p-KQHDWpKsoX89x57nJK with customer name: Kelly Martinez
-INFO     root:test_suite.py:157 test_create_new_order inserted into kafka topic 'noduco-task' via producer.
-INFO     root:test_suite.py:161 New Order created: {"created":true,"orderId":"RZ_N4eCM-l5bfxUg9YC4Z"}
-INFO     root:test_suite.py:60 End to end automation testing 1
-INFO     root:test_suite.py:61 ============================================================
-INFO     root:test_suite.py:103 Cart created with cartId: ryy3eP9yJIv5bi3ghELlE
-INFO     root:sql_utility.py:26 ryy3eP9yJIv5bi3ghELlE inserted into TableOne!
-INFO     root:test_suite.py:112 test_create_cart inserted into kafka topic 'noduco-task' via producer.
-INFO     root:test_suite.py:28 automated addition for cartId: ryy3eP9yJIv5bi3ghELlE
-INFO     root:basic_utility.py:76 automated addition for cartId: ryy3eP9yJIv5bi3ghELlE
-INFO     root:sql_utility.py:33 ryy3eP9yJIv5bi3ghELlE with productId: 1225 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: ryy3eP9yJIv5bi3ghELlE with productId: 1225 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 1225 added to cart with cartId- ryy3eP9yJIv5bi3ghELlE in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: ryy3eP9yJIv5bi3ghELlE
-INFO     root:basic_utility.py:76 automated addition for cartId: ryy3eP9yJIv5bi3ghELlE
-INFO     root:sql_utility.py:33 ryy3eP9yJIv5bi3ghELlE with productId: 3674 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: ryy3eP9yJIv5bi3ghELlE with productId: 3674 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 3674 added to cart with cartId- ryy3eP9yJIv5bi3ghELlE in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: ryy3eP9yJIv5bi3ghELlE
-INFO     root:basic_utility.py:76 automated addition for cartId: ryy3eP9yJIv5bi3ghELlE
-INFO     root:sql_utility.py:33 ryy3eP9yJIv5bi3ghELlE with productId: 2585 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: ryy3eP9yJIv5bi3ghELlE with productId: 2585 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 2585 added to cart with cartId- ryy3eP9yJIv5bi3ghELlE in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: ryy3eP9yJIv5bi3ghELlE
-INFO     root:basic_utility.py:76 automated addition for cartId: ryy3eP9yJIv5bi3ghELlE
-INFO     root:sql_utility.py:33 ryy3eP9yJIv5bi3ghELlE with productId: 8739 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: ryy3eP9yJIv5bi3ghELlE with productId: 8739 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 8739 added to cart with cartId- ryy3eP9yJIv5bi3ghELlE in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: ryy3eP9yJIv5bi3ghELlE
-INFO     root:basic_utility.py:76 automated addition for cartId: ryy3eP9yJIv5bi3ghELlE
-INFO     root:sql_utility.py:33 ryy3eP9yJIv5bi3ghELlE with productId: 4643 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: ryy3eP9yJIv5bi3ghELlE with productId: 4643 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 4643 added to cart with cartId- ryy3eP9yJIv5bi3ghELlE in test_automate_add_items_to_a_single_cart
-INFO     root:sql_utility.py:40 ryy3eP9yJIv5bi3ghELlE with orderId: 2qHb8AuGnG-Y6xQ1roCh4 with customer name: Jason Shea inserted into TableThree!
-INFO     root:test_suite.py:152 OrderId: 2qHb8AuGnG-Y6xQ1roCh4 with cartId: ryy3eP9yJIv5bi3ghELlE with customer name: Jason Shea
-INFO     root:test_suite.py:157 test_create_new_order inserted into kafka topic 'noduco-task' via producer.
-INFO     root:test_suite.py:161 New Order created: {"created":true,"orderId":"2qHb8AuGnG-Y6xQ1roCh4"}
-INFO     root:test_suite.py:60 End to end automation testing 2
-INFO     root:test_suite.py:61 ============================================================
-INFO     root:test_suite.py:103 Cart created with cartId: JK9rkG6xcgxraja4tf8_t
-INFO     root:sql_utility.py:26 JK9rkG6xcgxraja4tf8_t inserted into TableOne!
-INFO     root:test_suite.py:112 test_create_cart inserted into kafka topic 'noduco-task' via producer.
-INFO     root:test_suite.py:28 automated addition for cartId: JK9rkG6xcgxraja4tf8_t
-INFO     root:basic_utility.py:76 automated addition for cartId: JK9rkG6xcgxraja4tf8_t
-INFO     root:sql_utility.py:33 JK9rkG6xcgxraja4tf8_t with productId: 1225 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: JK9rkG6xcgxraja4tf8_t with productId: 1225 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 1225 added to cart with cartId- JK9rkG6xcgxraja4tf8_t in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: JK9rkG6xcgxraja4tf8_t
-INFO     root:basic_utility.py:76 automated addition for cartId: JK9rkG6xcgxraja4tf8_t
-INFO     root:sql_utility.py:33 JK9rkG6xcgxraja4tf8_t with productId: 3674 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: JK9rkG6xcgxraja4tf8_t with productId: 3674 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 3674 added to cart with cartId- JK9rkG6xcgxraja4tf8_t in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: JK9rkG6xcgxraja4tf8_t
-INFO     root:basic_utility.py:76 automated addition for cartId: JK9rkG6xcgxraja4tf8_t
-INFO     root:sql_utility.py:33 JK9rkG6xcgxraja4tf8_t with productId: 2585 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: JK9rkG6xcgxraja4tf8_t with productId: 2585 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 2585 added to cart with cartId- JK9rkG6xcgxraja4tf8_t in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: JK9rkG6xcgxraja4tf8_t
-INFO     root:basic_utility.py:76 automated addition for cartId: JK9rkG6xcgxraja4tf8_t
-INFO     root:sql_utility.py:33 JK9rkG6xcgxraja4tf8_t with productId: 8739 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: JK9rkG6xcgxraja4tf8_t with productId: 8739 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 8739 added to cart with cartId- JK9rkG6xcgxraja4tf8_t in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: JK9rkG6xcgxraja4tf8_t
-INFO     root:basic_utility.py:76 automated addition for cartId: JK9rkG6xcgxraja4tf8_t
-INFO     root:sql_utility.py:33 JK9rkG6xcgxraja4tf8_t with productId: 4643 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: JK9rkG6xcgxraja4tf8_t with productId: 4643 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 4643 added to cart with cartId- JK9rkG6xcgxraja4tf8_t in test_automate_add_items_to_a_single_cart
-INFO     root:sql_utility.py:40 JK9rkG6xcgxraja4tf8_t with orderId: ZIKCIZ1V-LUNpxnmNP0k1 with customer name: Johnathan Williams inserted into TableThree!
-INFO     root:test_suite.py:152 OrderId: ZIKCIZ1V-LUNpxnmNP0k1 with cartId: JK9rkG6xcgxraja4tf8_t with customer name: Johnathan Williams
-INFO     root:test_suite.py:157 test_create_new_order inserted into kafka topic 'noduco-task' via producer.
-INFO     root:test_suite.py:161 New Order created: {"created":true,"orderId":"ZIKCIZ1V-LUNpxnmNP0k1"}
-INFO     root:test_suite.py:60 End to end automation testing 3
-INFO     root:test_suite.py:61 ============================================================
-INFO     root:test_suite.py:103 Cart created with cartId: -5s4YdoK7MBuyoeF-eMzp
-INFO     root:sql_utility.py:26 -5s4YdoK7MBuyoeF-eMzp inserted into TableOne!
-INFO     root:test_suite.py:112 test_create_cart inserted into kafka topic 'noduco-task' via producer.
-INFO     root:test_suite.py:28 automated addition for cartId: -5s4YdoK7MBuyoeF-eMzp
-INFO     root:basic_utility.py:76 automated addition for cartId: -5s4YdoK7MBuyoeF-eMzp
-INFO     root:sql_utility.py:33 -5s4YdoK7MBuyoeF-eMzp with productId: 1225 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: -5s4YdoK7MBuyoeF-eMzp with productId: 1225 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 1225 added to cart with cartId- -5s4YdoK7MBuyoeF-eMzp in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: -5s4YdoK7MBuyoeF-eMzp
-INFO     root:basic_utility.py:76 automated addition for cartId: -5s4YdoK7MBuyoeF-eMzp
-INFO     root:sql_utility.py:33 -5s4YdoK7MBuyoeF-eMzp with productId: 3674 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: -5s4YdoK7MBuyoeF-eMzp with productId: 3674 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 3674 added to cart with cartId- -5s4YdoK7MBuyoeF-eMzp in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: -5s4YdoK7MBuyoeF-eMzp
-INFO     root:basic_utility.py:76 automated addition for cartId: -5s4YdoK7MBuyoeF-eMzp
-INFO     root:sql_utility.py:33 -5s4YdoK7MBuyoeF-eMzp with productId: 2585 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: -5s4YdoK7MBuyoeF-eMzp with productId: 2585 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 2585 added to cart with cartId- -5s4YdoK7MBuyoeF-eMzp in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: -5s4YdoK7MBuyoeF-eMzp
-INFO     root:basic_utility.py:76 automated addition for cartId: -5s4YdoK7MBuyoeF-eMzp
-INFO     root:sql_utility.py:33 -5s4YdoK7MBuyoeF-eMzp with productId: 8739 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: -5s4YdoK7MBuyoeF-eMzp with productId: 8739 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 8739 added to cart with cartId- -5s4YdoK7MBuyoeF-eMzp in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: -5s4YdoK7MBuyoeF-eMzp
-INFO     root:basic_utility.py:76 automated addition for cartId: -5s4YdoK7MBuyoeF-eMzp
-INFO     root:sql_utility.py:33 -5s4YdoK7MBuyoeF-eMzp with productId: 4643 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: -5s4YdoK7MBuyoeF-eMzp with productId: 4643 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 4643 added to cart with cartId- -5s4YdoK7MBuyoeF-eMzp in test_automate_add_items_to_a_single_cart
-INFO     root:sql_utility.py:40 -5s4YdoK7MBuyoeF-eMzp with orderId: gf7KNRaaHuKvreV5p6FI0 with customer name: Stephanie West inserted into TableThree!
-INFO     root:test_suite.py:152 OrderId: gf7KNRaaHuKvreV5p6FI0 with cartId: -5s4YdoK7MBuyoeF-eMzp with customer name: Stephanie West
-INFO     root:test_suite.py:157 test_create_new_order inserted into kafka topic 'noduco-task' via producer.
-INFO     root:test_suite.py:161 New Order created: {"created":true,"orderId":"gf7KNRaaHuKvreV5p6FI0"}
-INFO     root:test_suite.py:60 End to end automation testing 4
-INFO     root:test_suite.py:61 ============================================================
-INFO     root:test_suite.py:103 Cart created with cartId: MHMDq69idD4pYWqRHE-k0
-INFO     root:sql_utility.py:26 MHMDq69idD4pYWqRHE-k0 inserted into TableOne!
-INFO     root:test_suite.py:112 test_create_cart inserted into kafka topic 'noduco-task' via producer.
-INFO     root:test_suite.py:28 automated addition for cartId: MHMDq69idD4pYWqRHE-k0
-INFO     root:basic_utility.py:76 automated addition for cartId: MHMDq69idD4pYWqRHE-k0
-INFO     root:sql_utility.py:33 MHMDq69idD4pYWqRHE-k0 with productId: 1225 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: MHMDq69idD4pYWqRHE-k0 with productId: 1225 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 1225 added to cart with cartId- MHMDq69idD4pYWqRHE-k0 in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: MHMDq69idD4pYWqRHE-k0
-INFO     root:basic_utility.py:76 automated addition for cartId: MHMDq69idD4pYWqRHE-k0
-INFO     root:sql_utility.py:33 MHMDq69idD4pYWqRHE-k0 with productId: 3674 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: MHMDq69idD4pYWqRHE-k0 with productId: 3674 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 3674 added to cart with cartId- MHMDq69idD4pYWqRHE-k0 in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: MHMDq69idD4pYWqRHE-k0
-INFO     root:basic_utility.py:76 automated addition for cartId: MHMDq69idD4pYWqRHE-k0
-INFO     root:sql_utility.py:33 MHMDq69idD4pYWqRHE-k0 with productId: 2585 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: MHMDq69idD4pYWqRHE-k0 with productId: 2585 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 2585 added to cart with cartId- MHMDq69idD4pYWqRHE-k0 in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: MHMDq69idD4pYWqRHE-k0
-INFO     root:basic_utility.py:76 automated addition for cartId: MHMDq69idD4pYWqRHE-k0
-INFO     root:sql_utility.py:33 MHMDq69idD4pYWqRHE-k0 with productId: 8739 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: MHMDq69idD4pYWqRHE-k0 with productId: 8739 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 8739 added to cart with cartId- MHMDq69idD4pYWqRHE-k0 in test_automate_add_items_to_a_single_cart
-INFO     root:test_suite.py:28 automated addition for cartId: MHMDq69idD4pYWqRHE-k0
-INFO     root:basic_utility.py:76 automated addition for cartId: MHMDq69idD4pYWqRHE-k0
-INFO     root:sql_utility.py:33 MHMDq69idD4pYWqRHE-k0 with productId: 4643 inserted into TableTwo!
-INFO     root:test_suite.py:198 CartId: MHMDq69idD4pYWqRHE-k0 with productId: 4643 persisted to tableTwo.
-INFO     root:test_suite.py:41 Product with productId- 4643 added to cart with cartId- MHMDq69idD4pYWqRHE-k0 in test_automate_add_items_to_a_single_cart
-INFO     root:sql_utility.py:40 MHMDq69idD4pYWqRHE-k0 with orderId: Ev5G3BJ8aWtA2jTiQajEc with customer name: Michael Bell inserted into TableThree!
-INFO     root:test_suite.py:152 OrderId: Ev5G3BJ8aWtA2jTiQajEc with cartId: MHMDq69idD4pYWqRHE-k0 with customer name: Michael Bell
-INFO     root:test_suite.py:157 test_create_new_order inserted into kafka topic 'noduco-task' via producer.
-INFO     root:test_suite.py:161 New Order created: {"created":true,"orderId":"Ev5G3BJ8aWtA2jTiQajEc"}
-INFO     root:test_suite.py:60 End to end automation testing 5
-INFO     root:test_suite.py:61 ============================================================
+WARNING  root:test_suite.py:41 Error occurred in add_items_to_cart with productId: 1225
+INFO     root:test_suite.py:33 automated addition for cartId: U1Y2AHh7DjbrX9JuPq9aA
+INFO     root:basic_utility.py:76 automated addition for cartId: U1Y2AHh7DjbrX9JuPq9aA
+INFO     root:sql_utility.py:32 U1Y2AHh7DjbrX9JuPq9aA with productId: 3674 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: U1Y2AHh7DjbrX9JuPq9aA with productId: 3674 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 3674 added to cart with cartId- U1Y2AHh7DjbrX9JuPq9aA in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: U1Y2AHh7DjbrX9JuPq9aA
+INFO     root:basic_utility.py:76 automated addition for cartId: U1Y2AHh7DjbrX9JuPq9aA
+INFO     root:sql_utility.py:32 U1Y2AHh7DjbrX9JuPq9aA with productId: 2585 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: U1Y2AHh7DjbrX9JuPq9aA with productId: 2585 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 2585 added to cart with cartId- U1Y2AHh7DjbrX9JuPq9aA in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: U1Y2AHh7DjbrX9JuPq9aA
+INFO     root:basic_utility.py:76 automated addition for cartId: U1Y2AHh7DjbrX9JuPq9aA
+INFO     root:sql_utility.py:32 U1Y2AHh7DjbrX9JuPq9aA with productId: 8739 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: U1Y2AHh7DjbrX9JuPq9aA with productId: 8739 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 8739 added to cart with cartId- U1Y2AHh7DjbrX9JuPq9aA in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: U1Y2AHh7DjbrX9JuPq9aA
+INFO     root:basic_utility.py:76 automated addition for cartId: U1Y2AHh7DjbrX9JuPq9aA
+INFO     root:sql_utility.py:32 U1Y2AHh7DjbrX9JuPq9aA with productId: 4643 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: U1Y2AHh7DjbrX9JuPq9aA with productId: 4643 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 4643 added to cart with cartId- U1Y2AHh7DjbrX9JuPq9aA in test_automate_add_items_to_a_single_cart
+INFO     root:sql_utility.py:39 U1Y2AHh7DjbrX9JuPq9aA with orderId: 2Z_Qe-cYZhmruaKJKu36W with customer name: Brittany Sellers inserted into TableThree!
+INFO     root:test_suite.py:157 OrderId: 2Z_Qe-cYZhmruaKJKu36W with cartId: U1Y2AHh7DjbrX9JuPq9aA with customer name: Brittany Sellers
+INFO     root:test_suite.py:162 test_create_new_order inserted into kafka topic 'noduco-task' via producer.
+INFO     root:test_suite.py:166 New Order created: {"created":true,"orderId":"2Z_Qe-cYZhmruaKJKu36W"}
+INFO     root:test_suite.py:108 Cart created with cartId: 83g0xBdMVMLtjoAnDhYW2
+INFO     root:sql_utility.py:25 83g0xBdMVMLtjoAnDhYW2 inserted into TableOne!
+INFO     root:test_suite.py:117 test_create_cart inserted into kafka topic 'noduco-task' via producer.
+INFO     root:test_suite.py:33 automated addition for cartId: 83g0xBdMVMLtjoAnDhYW2
+INFO     root:basic_utility.py:76 automated addition for cartId: 83g0xBdMVMLtjoAnDhYW2
+INFO     root:sql_utility.py:32 83g0xBdMVMLtjoAnDhYW2 with productId: 1225 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: 83g0xBdMVMLtjoAnDhYW2 with productId: 1225 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 1225 added to cart with cartId- 83g0xBdMVMLtjoAnDhYW2 in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: 83g0xBdMVMLtjoAnDhYW2
+INFO     root:basic_utility.py:76 automated addition for cartId: 83g0xBdMVMLtjoAnDhYW2
+INFO     root:sql_utility.py:32 83g0xBdMVMLtjoAnDhYW2 with productId: 3674 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: 83g0xBdMVMLtjoAnDhYW2 with productId: 3674 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 3674 added to cart with cartId- 83g0xBdMVMLtjoAnDhYW2 in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: 83g0xBdMVMLtjoAnDhYW2
+INFO     root:basic_utility.py:76 automated addition for cartId: 83g0xBdMVMLtjoAnDhYW2
+INFO     root:sql_utility.py:32 83g0xBdMVMLtjoAnDhYW2 with productId: 2585 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: 83g0xBdMVMLtjoAnDhYW2 with productId: 2585 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 2585 added to cart with cartId- 83g0xBdMVMLtjoAnDhYW2 in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: 83g0xBdMVMLtjoAnDhYW2
+INFO     root:basic_utility.py:76 automated addition for cartId: 83g0xBdMVMLtjoAnDhYW2
+INFO     root:sql_utility.py:32 83g0xBdMVMLtjoAnDhYW2 with productId: 8739 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: 83g0xBdMVMLtjoAnDhYW2 with productId: 8739 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 8739 added to cart with cartId- 83g0xBdMVMLtjoAnDhYW2 in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: 83g0xBdMVMLtjoAnDhYW2
+INFO     root:basic_utility.py:76 automated addition for cartId: 83g0xBdMVMLtjoAnDhYW2
+INFO     root:sql_utility.py:32 83g0xBdMVMLtjoAnDhYW2 with productId: 4643 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: 83g0xBdMVMLtjoAnDhYW2 with productId: 4643 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 4643 added to cart with cartId- 83g0xBdMVMLtjoAnDhYW2 in test_automate_add_items_to_a_single_cart
+INFO     root:sql_utility.py:39 83g0xBdMVMLtjoAnDhYW2 with orderId: -kzy0i2sEstf0z2NI2X2R with customer name: Sarah Bauer inserted into TableThree!
+INFO     root:test_suite.py:157 OrderId: -kzy0i2sEstf0z2NI2X2R with cartId: 83g0xBdMVMLtjoAnDhYW2 with customer name: Sarah Bauer
+INFO     root:test_suite.py:162 test_create_new_order inserted into kafka topic 'noduco-task' via producer.
+INFO     root:test_suite.py:166 New Order created: {"created":true,"orderId":"-kzy0i2sEstf0z2NI2X2R"}
+INFO     root:test_suite.py:65 End to end automation testing 1
+INFO     root:test_suite.py:66 ============================================================
+INFO     root:test_suite.py:108 Cart created with cartId: ECK36VOW8E9kE2Dwhwx5u
+INFO     root:sql_utility.py:25 ECK36VOW8E9kE2Dwhwx5u inserted into TableOne!
+INFO     root:test_suite.py:117 test_create_cart inserted into kafka topic 'noduco-task' via producer.
+INFO     root:test_suite.py:33 automated addition for cartId: ECK36VOW8E9kE2Dwhwx5u
+INFO     root:basic_utility.py:76 automated addition for cartId: ECK36VOW8E9kE2Dwhwx5u
+INFO     root:sql_utility.py:32 ECK36VOW8E9kE2Dwhwx5u with productId: 1225 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: ECK36VOW8E9kE2Dwhwx5u with productId: 1225 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 1225 added to cart with cartId- ECK36VOW8E9kE2Dwhwx5u in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: ECK36VOW8E9kE2Dwhwx5u
+INFO     root:basic_utility.py:76 automated addition for cartId: ECK36VOW8E9kE2Dwhwx5u
+INFO     root:sql_utility.py:32 ECK36VOW8E9kE2Dwhwx5u with productId: 3674 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: ECK36VOW8E9kE2Dwhwx5u with productId: 3674 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 3674 added to cart with cartId- ECK36VOW8E9kE2Dwhwx5u in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: ECK36VOW8E9kE2Dwhwx5u
+INFO     root:basic_utility.py:76 automated addition for cartId: ECK36VOW8E9kE2Dwhwx5u
+INFO     root:sql_utility.py:32 ECK36VOW8E9kE2Dwhwx5u with productId: 2585 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: ECK36VOW8E9kE2Dwhwx5u with productId: 2585 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 2585 added to cart with cartId- ECK36VOW8E9kE2Dwhwx5u in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: ECK36VOW8E9kE2Dwhwx5u
+INFO     root:basic_utility.py:76 automated addition for cartId: ECK36VOW8E9kE2Dwhwx5u
+INFO     root:sql_utility.py:32 ECK36VOW8E9kE2Dwhwx5u with productId: 8739 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: ECK36VOW8E9kE2Dwhwx5u with productId: 8739 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 8739 added to cart with cartId- ECK36VOW8E9kE2Dwhwx5u in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: ECK36VOW8E9kE2Dwhwx5u
+INFO     root:basic_utility.py:76 automated addition for cartId: ECK36VOW8E9kE2Dwhwx5u
+INFO     root:sql_utility.py:32 ECK36VOW8E9kE2Dwhwx5u with productId: 4643 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: ECK36VOW8E9kE2Dwhwx5u with productId: 4643 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 4643 added to cart with cartId- ECK36VOW8E9kE2Dwhwx5u in test_automate_add_items_to_a_single_cart
+INFO     root:sql_utility.py:39 ECK36VOW8E9kE2Dwhwx5u with orderId: xR5aUGKxNzRlaZ3vdVB-M with customer name: Gabriela Little inserted into TableThree!
+INFO     root:test_suite.py:157 OrderId: xR5aUGKxNzRlaZ3vdVB-M with cartId: ECK36VOW8E9kE2Dwhwx5u with customer name: Gabriela Little
+INFO     root:test_suite.py:162 test_create_new_order inserted into kafka topic 'noduco-task' via producer.
+INFO     root:test_suite.py:166 New Order created: {"created":true,"orderId":"xR5aUGKxNzRlaZ3vdVB-M"}
+INFO     root:test_suite.py:65 End to end automation testing 2
+INFO     root:test_suite.py:66 ============================================================
+INFO     root:test_suite.py:108 Cart created with cartId: hCQZiqARjyTmzMx5-Ldaq
+INFO     root:sql_utility.py:25 hCQZiqARjyTmzMx5-Ldaq inserted into TableOne!
+INFO     root:test_suite.py:117 test_create_cart inserted into kafka topic 'noduco-task' via producer.
+INFO     root:test_suite.py:33 automated addition for cartId: hCQZiqARjyTmzMx5-Ldaq
+INFO     root:basic_utility.py:76 automated addition for cartId: hCQZiqARjyTmzMx5-Ldaq
+INFO     root:sql_utility.py:32 hCQZiqARjyTmzMx5-Ldaq with productId: 1225 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: hCQZiqARjyTmzMx5-Ldaq with productId: 1225 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 1225 added to cart with cartId- hCQZiqARjyTmzMx5-Ldaq in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: hCQZiqARjyTmzMx5-Ldaq
+INFO     root:basic_utility.py:76 automated addition for cartId: hCQZiqARjyTmzMx5-Ldaq
+INFO     root:sql_utility.py:32 hCQZiqARjyTmzMx5-Ldaq with productId: 3674 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: hCQZiqARjyTmzMx5-Ldaq with productId: 3674 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 3674 added to cart with cartId- hCQZiqARjyTmzMx5-Ldaq in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: hCQZiqARjyTmzMx5-Ldaq
+INFO     root:basic_utility.py:76 automated addition for cartId: hCQZiqARjyTmzMx5-Ldaq
+INFO     root:sql_utility.py:32 hCQZiqARjyTmzMx5-Ldaq with productId: 2585 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: hCQZiqARjyTmzMx5-Ldaq with productId: 2585 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 2585 added to cart with cartId- hCQZiqARjyTmzMx5-Ldaq in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: hCQZiqARjyTmzMx5-Ldaq
+INFO     root:basic_utility.py:76 automated addition for cartId: hCQZiqARjyTmzMx5-Ldaq
+INFO     root:sql_utility.py:32 hCQZiqARjyTmzMx5-Ldaq with productId: 8739 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: hCQZiqARjyTmzMx5-Ldaq with productId: 8739 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 8739 added to cart with cartId- hCQZiqARjyTmzMx5-Ldaq in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: hCQZiqARjyTmzMx5-Ldaq
+INFO     root:basic_utility.py:76 automated addition for cartId: hCQZiqARjyTmzMx5-Ldaq
+INFO     root:sql_utility.py:32 hCQZiqARjyTmzMx5-Ldaq with productId: 4643 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: hCQZiqARjyTmzMx5-Ldaq with productId: 4643 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 4643 added to cart with cartId- hCQZiqARjyTmzMx5-Ldaq in test_automate_add_items_to_a_single_cart
+INFO     root:sql_utility.py:39 hCQZiqARjyTmzMx5-Ldaq with orderId: ibpA2b5XCaHntcoulvn1L with customer name: Edward Hebert inserted into TableThree!
+INFO     root:test_suite.py:157 OrderId: ibpA2b5XCaHntcoulvn1L with cartId: hCQZiqARjyTmzMx5-Ldaq with customer name: Edward Hebert
+INFO     root:test_suite.py:162 test_create_new_order inserted into kafka topic 'noduco-task' via producer.
+INFO     root:test_suite.py:166 New Order created: {"created":true,"orderId":"ibpA2b5XCaHntcoulvn1L"}
+INFO     root:test_suite.py:65 End to end automation testing 3
+INFO     root:test_suite.py:66 ============================================================
+INFO     root:test_suite.py:108 Cart created with cartId: 7Z9-BzB1g9Z8vm2t0pQ8A
+INFO     root:sql_utility.py:25 7Z9-BzB1g9Z8vm2t0pQ8A inserted into TableOne!
+INFO     root:test_suite.py:117 test_create_cart inserted into kafka topic 'noduco-task' via producer.
+INFO     root:test_suite.py:33 automated addition for cartId: 7Z9-BzB1g9Z8vm2t0pQ8A
+INFO     root:basic_utility.py:76 automated addition for cartId: 7Z9-BzB1g9Z8vm2t0pQ8A
+INFO     root:sql_utility.py:32 7Z9-BzB1g9Z8vm2t0pQ8A with productId: 1225 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: 7Z9-BzB1g9Z8vm2t0pQ8A with productId: 1225 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 1225 added to cart with cartId- 7Z9-BzB1g9Z8vm2t0pQ8A in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: 7Z9-BzB1g9Z8vm2t0pQ8A
+INFO     root:basic_utility.py:76 automated addition for cartId: 7Z9-BzB1g9Z8vm2t0pQ8A
+INFO     root:sql_utility.py:32 7Z9-BzB1g9Z8vm2t0pQ8A with productId: 3674 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: 7Z9-BzB1g9Z8vm2t0pQ8A with productId: 3674 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 3674 added to cart with cartId- 7Z9-BzB1g9Z8vm2t0pQ8A in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: 7Z9-BzB1g9Z8vm2t0pQ8A
+INFO     root:basic_utility.py:76 automated addition for cartId: 7Z9-BzB1g9Z8vm2t0pQ8A
+INFO     root:sql_utility.py:32 7Z9-BzB1g9Z8vm2t0pQ8A with productId: 2585 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: 7Z9-BzB1g9Z8vm2t0pQ8A with productId: 2585 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 2585 added to cart with cartId- 7Z9-BzB1g9Z8vm2t0pQ8A in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: 7Z9-BzB1g9Z8vm2t0pQ8A
+INFO     root:basic_utility.py:76 automated addition for cartId: 7Z9-BzB1g9Z8vm2t0pQ8A
+INFO     root:sql_utility.py:32 7Z9-BzB1g9Z8vm2t0pQ8A with productId: 8739 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: 7Z9-BzB1g9Z8vm2t0pQ8A with productId: 8739 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 8739 added to cart with cartId- 7Z9-BzB1g9Z8vm2t0pQ8A in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: 7Z9-BzB1g9Z8vm2t0pQ8A
+INFO     root:basic_utility.py:76 automated addition for cartId: 7Z9-BzB1g9Z8vm2t0pQ8A
+INFO     root:sql_utility.py:32 7Z9-BzB1g9Z8vm2t0pQ8A with productId: 4643 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: 7Z9-BzB1g9Z8vm2t0pQ8A with productId: 4643 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 4643 added to cart with cartId- 7Z9-BzB1g9Z8vm2t0pQ8A in test_automate_add_items_to_a_single_cart
+INFO     root:sql_utility.py:39 7Z9-BzB1g9Z8vm2t0pQ8A with orderId: Yawi8oN7e3R9cro2cAogo with customer name: Stephanie Baker inserted into TableThree!
+INFO     root:test_suite.py:157 OrderId: Yawi8oN7e3R9cro2cAogo with cartId: 7Z9-BzB1g9Z8vm2t0pQ8A with customer name: Stephanie Baker
+INFO     root:test_suite.py:162 test_create_new_order inserted into kafka topic 'noduco-task' via producer.
+INFO     root:test_suite.py:166 New Order created: {"created":true,"orderId":"Yawi8oN7e3R9cro2cAogo"}
+INFO     root:test_suite.py:65 End to end automation testing 4
+INFO     root:test_suite.py:66 ============================================================
+INFO     root:test_suite.py:108 Cart created with cartId: gaOVt2IDngSzuJuFvqt2n
+INFO     root:sql_utility.py:25 gaOVt2IDngSzuJuFvqt2n inserted into TableOne!
+INFO     root:test_suite.py:117 test_create_cart inserted into kafka topic 'noduco-task' via producer.
+INFO     root:test_suite.py:33 automated addition for cartId: gaOVt2IDngSzuJuFvqt2n
+INFO     root:basic_utility.py:76 automated addition for cartId: gaOVt2IDngSzuJuFvqt2n
+INFO     root:sql_utility.py:32 gaOVt2IDngSzuJuFvqt2n with productId: 1225 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: gaOVt2IDngSzuJuFvqt2n with productId: 1225 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 1225 added to cart with cartId- gaOVt2IDngSzuJuFvqt2n in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: gaOVt2IDngSzuJuFvqt2n
+INFO     root:basic_utility.py:76 automated addition for cartId: gaOVt2IDngSzuJuFvqt2n
+INFO     root:sql_utility.py:32 gaOVt2IDngSzuJuFvqt2n with productId: 3674 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: gaOVt2IDngSzuJuFvqt2n with productId: 3674 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 3674 added to cart with cartId- gaOVt2IDngSzuJuFvqt2n in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: gaOVt2IDngSzuJuFvqt2n
+INFO     root:basic_utility.py:76 automated addition for cartId: gaOVt2IDngSzuJuFvqt2n
+INFO     root:sql_utility.py:32 gaOVt2IDngSzuJuFvqt2n with productId: 2585 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: gaOVt2IDngSzuJuFvqt2n with productId: 2585 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 2585 added to cart with cartId- gaOVt2IDngSzuJuFvqt2n in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: gaOVt2IDngSzuJuFvqt2n
+INFO     root:basic_utility.py:76 automated addition for cartId: gaOVt2IDngSzuJuFvqt2n
+INFO     root:sql_utility.py:32 gaOVt2IDngSzuJuFvqt2n with productId: 8739 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: gaOVt2IDngSzuJuFvqt2n with productId: 8739 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 8739 added to cart with cartId- gaOVt2IDngSzuJuFvqt2n in test_automate_add_items_to_a_single_cart
+INFO     root:test_suite.py:33 automated addition for cartId: gaOVt2IDngSzuJuFvqt2n
+INFO     root:basic_utility.py:76 automated addition for cartId: gaOVt2IDngSzuJuFvqt2n
+INFO     root:sql_utility.py:32 gaOVt2IDngSzuJuFvqt2n with productId: 4643 inserted into TableTwo!
+INFO     root:test_suite.py:203 CartId: gaOVt2IDngSzuJuFvqt2n with productId: 4643 persisted to tableTwo.
+INFO     root:test_suite.py:46 Product with productId- 4643 added to cart with cartId- gaOVt2IDngSzuJuFvqt2n in test_automate_add_items_to_a_single_cart
+INFO     root:sql_utility.py:39 gaOVt2IDngSzuJuFvqt2n with orderId: V2ct7Ax46KuNVK387MHfR with customer name: John Wallace inserted into TableThree!
+INFO     root:test_suite.py:157 OrderId: V2ct7Ax46KuNVK387MHfR with cartId: gaOVt2IDngSzuJuFvqt2n with customer name: John Wallace
+INFO     root:test_suite.py:162 test_create_new_order inserted into kafka topic 'noduco-task' via producer.
+INFO     root:test_suite.py:166 New Order created: {"created":true,"orderId":"V2ct7Ax46KuNVK387MHfR"}
+INFO     root:test_suite.py:65 End to end automation testing 5
+INFO     root:test_suite.py:66 ============================================================
 WARNING  root:basic_utility.py:93 From soft assertion: Error occurred in add_items_to_cart with productId: 1225

@@ -3,7 +3,17 @@ import pytest
 import requests
 import logging
 import sys
+import pypandoc
 from pycharm_projects.utility import basic_utility, sql_utility, kafka_utility
+import subprocess
+import datetime
+
+# Define the timestamp variable
+timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
+
+input_file = "/home/afzhal-ahmed-s/pytest-jenkins-mysql-logging/pycharm_projects/task/demonstration/nitinc_pre_task/log_file.log"
+output_file = "output.html"
 
 sys.path.append('/home/afzhal-ahmed-s/pytest_jenkins_mysql_logging/pycharm_projects')
 
@@ -11,7 +21,6 @@ obj = basic_utility.Basic_utility()
 sql_gateway = sql_utility.Sql_utility("localhost", "root", "new_password", "db1")
 # kafka utility
 kafka_utility = kafka_utility.Kafka_utility()
-# log_file_path = 'my_log_file.log'
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
 
@@ -203,3 +212,16 @@ def add_items_to_cart(product_id):
 def test_give_me_all_messages_in_queues_and_kafka_consumer():
     obj.get_all_message_from_queues()
     kafka_utility.consume_message()
+
+
+def test_convert_log_file_to_html():
+    subprocess.run(["pandoc", input_file, "-o", output_file])
+
+# pre-Sep15
+# [DONE] logs -> html format (python library)
+# [DONE] data_driven ->  i) test_excel_to_json_payload_then_api_request
+#                        ii)test_list_of_json_to_excel_data_insertion
+
+# Sep15
+# extend report html else alternative, generate html report for test suite, try to host it, for history of 7 days
+# next call on google meet
