@@ -20,7 +20,8 @@ class Basic_utility:
         assert my_element in input_list, f"{my_element} not found in {input_list}"
 
     def header_with_access_token(self):
-        return {"Authorization": "Bearer 3da66c8dc837414e2ba267151263f10147559f49a22e9e4b7f9314fec51d2541"}
+        access_token = "18e1934d4fed7015d9235f4463081b7c85fbbe0782b034cab0fc18a0d0cd80ec"
+        return {"Authorization": "Bearer 18e1934d4fed7015d9235f4463081b7c85fbbe0782b034cab0fc18a0d0cd80ec"}
 
     def get_base_url(self):
         return base_url
@@ -63,7 +64,7 @@ class Basic_utility:
     def header_with_content_type(self):
         return {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer 3da66c8dc837414e2ba267151263f10147559f49a22e9e4b7f9314fec51d2541'
+            "Authorization": "Bearer 18e1934d4fed7015d9235f4463081b7c85fbbe0782b034cab0fc18a0d0cd80ec"
         }
 
     def header_without_content_type(self):
