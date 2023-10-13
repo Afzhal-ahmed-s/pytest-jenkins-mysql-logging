@@ -4,6 +4,8 @@ import requests
 import logging
 import sys
 import pypandoc
+
+from pycharm_projects.task.demonstration.nitinc_pre_task.conftest import timezones_to_log
 from pycharm_projects.utility import basic_utility, sql_utility, kafka_utility
 import subprocess
 import datetime
@@ -76,7 +78,8 @@ def test_check_api_status():
     message = str(response.status_code)
     kafka_utility.produce_message("test_check_api_status: ", message)
     logging.info("test_check_api_status message inserted into kafka topic 'noduco-task' via producer.")
-
+    print(datetime.datetime.now())
+    logging.info(f"test_check_api_status excuted at time: {str(datetime.datetime.now())} ")
     assert response.status_code == expected_status_code
 
 
@@ -92,6 +95,7 @@ def test_get_product_by_id():
     message = response.text
     kafka_utility.produce_message("test_get_product_by_id: ", message)
     logging.info("test_get_product_by_id inserted into kafka topic 'noduco-task' via producer.")
+    logging.info(f"test_get_product_by_id excuted at time: {datetime.datetime.now()}")
 
     assert response.status_code == 200
     assert manufacturer == expected_manufacturer
@@ -115,6 +119,7 @@ def test_create_cart():
     message = response.text
     kafka_utility.produce_message("test_create_cart: ", message)
     logging.info("test_create_cart inserted into kafka topic 'noduco-task' via producer.")
+    logging.info(f"test_create_cart excuted at time: {datetime.datetime.now()}")
 
     assert created == expected_created_response
 
@@ -136,6 +141,7 @@ def test_add_items_to_cart():
     message = response.text
     kafka_utility.produce_message("test_add_items_to_cart: ", message)
     logging.info("test_add_items_to_cart inserted into kafka topic 'noduco-task' via producer.")
+    logging.info(f"test_add_items_to_cart excuted at time: {datetime.datetime.now()}")
 
     assert response.status_code == expected_status_code_response
 
@@ -147,6 +153,7 @@ def test_create_new_order():
     response = requests.request("POST", url, headers=obj.header_with_content_type(), data=json_payload, timeout=30)
 
     python_response_format = json.loads(response.text)
+    print("Check: ",python_response_format)
     orderId = python_response_format["orderId"]
     python_format_json_payload = json.loads(json_payload)
     cartId = python_format_json_payload["cartId"]
@@ -160,6 +167,7 @@ def test_create_new_order():
     message = response.text
     kafka_utility.produce_message("test_create_new_order: ", message)
     logging.info("test_create_new_order inserted into kafka topic 'noduco-task' via producer.")
+    logging.info(f"test_create_new_order excuted at time: {datetime.datetime.now()}")
 
     assert response.status_code == 201
 
@@ -214,14 +222,39 @@ def test_give_me_all_messages_in_queues_and_kafka_consumer():
     kafka_utility.consume_message()
 
 
-def test_convert_log_file_to_html():
-    subprocess.run(["pandoc", input_file, "-o", output_file])
+def test_exp(log_execution_time):
+    for i, timezone in enumerate(timezones_to_log):
+        logging.info(f"test_check_api_status executed in {timezone} at {log_execution_time[i]}")
 
-# pre-Sep15
-# [DONE] logs -> html format (python library)
-# [DONE] data_driven ->  i) test_excel_to_json_payload_then_api_request
-#                        ii)test_list_of_json_to_excel_data_insertion
 
-# Sep15
-# extend report html else alternative, generate html report for test suite, try to host it, for history of 7 days
-# next call on google meet
+
+
+
+
+# def test_convert_log_file_to_html():
+#     subprocess.run(["pandoc", input_file, "-o", output_file])
+
+
+
+
+
+# Sep19
+# try to host the report folder (not GitHub or single file), for history of 7 days, with domain, refresh / dynamically updation in web page
+# [completed] timestamp for individual test cases, date time format, write through decorator method, custom decorator, run before running cases
+# [completed] pie chart / graphical representation of html report or test suite
+
+
+# data structures, python related things call this coming friday (maybe)
+
+
+
+
+
+
+
+# expensive services that local companies cant afford, google level, not normal company work
+# later -> mongoDB through python
+
+# Done-
+# ZOQL deep (P1), SOQL deep (P1)
+# billing ZOQL, leads customer SOQL
