@@ -2,6 +2,7 @@ import mysql.connector
 import logging
 import pycharm_projects.task.demonstration.nitinc_pre_task.reports as reports
 
+
 # Connect to the MySQL server
 class Sql_utility:
 
@@ -47,7 +48,6 @@ class Sql_utility:
         logging.info(
             f"HTML report generated at time: {time_stamp} inserted into reports table!")
 
-
     def persist_html_report_into_db(self, file_name):
         # Read the HTML file
         g_html_file_name = "/home/afzhal-ahmed-s/pytest-jenkins-mysql-logging/pycharm_projects/task/demonstration/nitinc_pre_task/reports/" + file_name + ".html"
@@ -64,8 +64,7 @@ class Sql_utility:
         # Commit the transaction and close the connection
         connection.commit()
         connection.close()
-        print(f"HTML file: '{file_name}.html' persisted into DB with file content: '{file_content}'.")
-
+        print(f"HTML file: '{file_name}.html' persisted into DB.")
 
     def retrieve_html_data_from_db(self):
         try:
@@ -75,21 +74,27 @@ class Sql_utility:
             # Fetch all the rows
             rows = cursor.fetchall()
 
-            # # Process and print the retrieved data
-            # for row in rows:
-            #     file_name, file_content = row
-            #     print(f"File Name: {file_name}")
-            #     # You can use file_content for further processing or display
-            #
-            # # print(rows)
-
             return rows
 
         except mysql.connector.Error as error:
             print(f"Error: {error}")
-            
-        # finally:
-        #     if connection.is_connected():
-        #         # cursor.close()
-        #         # connection.close()
-        #         print("summa")
+
+
+    def retrieve_html_file_content_from_db_with_file_name(self, file_name):
+        try:
+            query = "SELECT file_content FROM html_files WHERE file_name = %s"
+            cursor.execute(query, (file_name,))
+
+            # Fetch the row
+            row = cursor.fetchone()
+
+            if row:
+                # Extract the file content from the retrieved row
+                file_content = row[0]
+                return file_content
+            else:
+                # If no matching record is found, return None or an appropriate value
+                return None
+
+        except mysql.connector.Error as error:
+            print(f"Error: {error}")

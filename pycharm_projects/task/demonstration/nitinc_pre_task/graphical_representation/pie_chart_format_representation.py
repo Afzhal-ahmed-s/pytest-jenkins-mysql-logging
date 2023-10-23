@@ -1,18 +1,16 @@
 import matplotlib.pyplot as plt
-import datetime
 import os
+
 
 class Pie_chart_format_representation:
 
     def __init__(self, passed_count, failed_count):
         global passed
         global failed
-        passed= passed_count
+        passed = passed_count
         failed = failed_count
 
-
     def form_pie_chart(self, timestamp):
-
         # Data for the pie chart
         labels = ['Passed', 'Failed']
         sizes = [passed, failed]  # Sizes or proportions for each category
@@ -20,8 +18,6 @@ class Pie_chart_format_representation:
         # Create a pie chart
         plt.figure(figsize=(5, 5))  # Set the figure size (optional)
         plt.pie(sizes, labels=labels, autopct='%1.0f%%', startangle=140)
-
-        # timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
         # Optional customization
         plt.title(f'Tests result of {timestamp} in pie chart format')

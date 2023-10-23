@@ -1,7 +1,8 @@
 
 class Img_imbedder:
     def __init__(self):
-        print("Img_imb_intiated")
+        dummy = 10
+
 
 
     def img_imbed_into_html(self, html_f_name, img_f_name):
