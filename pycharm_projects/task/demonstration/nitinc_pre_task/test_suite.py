@@ -15,7 +15,7 @@ timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
 
 input_file = "/home/afzhal-ahmed-s/pytest-jenkins-mysql-logging/pycharm_projects/task/demonstration/nitinc_pre_task/log_file.log"
-output_file = "output.html"
+# output_file = "output.html"
 
 sys.path.append('/home/afzhal-ahmed-s/pytest_jenkins_mysql_logging/pycharm_projects')
 
@@ -53,7 +53,7 @@ def test_automate_add_items_to_a_single_cart(product_id):
 
 @pytest.mark.automate
 @pytest.mark.run(order=7)
-def test_automate_create_cart_add_items_to_cart_create_an_order():
+def test_automate_create_cart_add_items_to_cart_create_an_order(log_execution_time):
     count = 1
 
     while count <= 5:
@@ -66,11 +66,14 @@ def test_automate_create_cart_add_items_to_cart_create_an_order():
         test_create_new_order()
         logging.info("End to end automation testing %d", count)
         logging.info("============================================================")
+        for i, timezone in enumerate(timezones_to_log):
+            logging.info(f"test_check_api_status executed in {timezone} at {log_execution_time[i]}")
+
         count += 1
 
 
 @pytest.mark.run(order=1)
-def test_check_api_status():
+def test_check_api_status(log_execution_time):
     expected_status_code = 200
     response = requests.get(obj.check_url_status_api())
 
@@ -80,11 +83,13 @@ def test_check_api_status():
     logging.info("test_check_api_status message inserted into kafka topic 'noduco-task' via producer.")
     print(datetime.datetime.now())
     logging.info(f"test_check_api_status excuted at time: {str(datetime.datetime.now())} ")
-    assert response.status_code == expected_status_code
+    for i, timezone in enumerate(timezones_to_log):
+        logging.info(f"test_check_api_status executed in {timezone} at {log_execution_time[i]}")
+        assert response.status_code == expected_status_code
 
 
 @pytest.mark.run(order=2)
-def test_get_product_by_id():
+def test_get_product_by_id(log_execution_time):
     product_id = 1225
     expected_manufacturer = "Bosch"
     response = requests.get(obj.get_product_by_id_api(product_id))
@@ -96,6 +101,8 @@ def test_get_product_by_id():
     kafka_utility.produce_message("test_get_product_by_id: ", message)
     logging.info("test_get_product_by_id inserted into kafka topic 'noduco-task' via producer.")
     logging.info(f"test_get_product_by_id excuted at time: {datetime.datetime.now()}")
+    for i, timezone in enumerate(timezones_to_log):
+        logging.info(f"test_check_api_status executed in {timezone} at {log_execution_time[i]}")
 
     assert response.status_code == 200
     assert manufacturer == expected_manufacturer
@@ -242,7 +249,8 @@ def test_exp(log_execution_time):
 # try to host the report folder (not GitHub or single file), for history of 7 days, with domain, refresh / dynamically updation in web page
 # [completed] timestamp for individual test cases, date time format, write through decorator method, custom decorator, run before running cases
 # [completed] pie chart / graphical representation of html report or test suite
-
+# hosting a folder in my project [nitin approach]
+# concourse pipeline
 
 # data structures, python related things call this coming friday (maybe)
 

@@ -27,7 +27,6 @@ class Kafka_utility():
 
             if msg is None:
                 print("No new message received.")
-                # continue
                 break
 
             if msg.error():

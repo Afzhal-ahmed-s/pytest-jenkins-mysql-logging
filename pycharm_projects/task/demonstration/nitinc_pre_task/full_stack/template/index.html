@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Viewer</title>
+</head>
+<body>
+    <h1>File List</h1>
+    <ul id="file-list"></ul>
+    <div id="file-content"></div>
+
+    <script>
+        // Function to fetch the list of files from your API
+        async function fetchFiles() {
+            const response = await fetch('/api/get_records'); // Adjust the API endpoint as needed
+            const files = await response.json();
+
+            const fileList = document.getElementById('file-list');
+            const fileContent = document.getElementById('file-content');
+
+            // Loop through files and create list items
+            files.forEach(file => {
+                const listItem = document.createElement('li');
+                listItem.textContent = file.file_name;
+                listItem.addEventListener('click', async () => {
+                    // Fetch and display file content when a file is clicked
+                    const fileResponse = await fetch('/api/get_file_content/' + file.file_name); // Adjust the API endpoint for file content
+                    const fileData = await fileResponse.text();
+                    fileContent.innerHTML = fileData;
+                });
+                fileList.appendChild(listItem);
+            });
+        }
+
+        fetchFiles(); // Fetch the list of files when the page loads
+    </script>
+</body>
+</html>
